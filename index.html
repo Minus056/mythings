@@ -463,10 +463,10 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	typearr[17] = "";
 }
 	var numpokes = document.getElementById("teaminput").elements.length;
+	console.log(numpokes);
 	var a;
 	var results = 0;
 	for (a = 1; a < numpokes; a++) {
-		console.log(document.getElementById(("Normal1")));
 		if (document.getElementById(("Normal"+a)).innerHTML == "Super Effective") {
 		results += 1;
 		}
