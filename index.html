@@ -2,7 +2,6 @@
 <h1>Team Type Matchp</h1>
 
 <head>
-<link href='morecss.css' rel='stylesheet'>
 <style type="text/css">
 	#teaminput { margin-top:16px; }
 	#teaminput label { display:block; }
@@ -316,229 +315,405 @@ var pokemonlist =  "Abra:{t1:Psychic,bs:{hp:25,at:20,df:15,sa:105,sd:55,sp:90,sl
 		var Fairydmg = "";
 		
 if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedmg = Fire.Normal; Waterdmg = Water.Normal; Electricdmg = Electric.Normal; Icedmg = Ice.Normal; Flyingdmg = Flying.Normal; Bugdmg = Bug.Normal; Poisondmg = Poison.Normal; Grounddmg = Ground.Normal; Rockdmg = Rock.Normal; Fightingdmg = Fighting.Normal; Psychicdmg = Psychic.Normal; Ghostdmg = Ghost.Normal; Dragondmg = Dragon.Normal; Darkdmg = Dark.Normal; Steeldmg = Steel.Normal; Fairydmg = Fairy.Normal; } if (t1 == 'Grass') { Normaldmg = Normal.Grass; Grassdmg = Grass.Grass; Firedmg = Fire.Grass; Waterdmg = Water.Grass; Electricdmg = Electric.Grass; Icedmg = Ice.Grass; Flyingdmg = Flying.Grass; Bugdmg = Bug.Grass; Poisondmg = Poison.Grass; Grounddmg = Ground.Grass; Rockdmg = Rock.Grass; Fightingdmg = Fighting.Grass; Psychicdmg = Psychic.Grass; Ghostdmg = Ghost.Grass; Dragondmg = Dragon.Grass; Darkdmg = Dark.Grass; Steeldmg = Steel.Grass; Fairydmg = Fairy.Grass; } if (t1 == 'Fire') { Normaldmg = Normal.Fire; Grassdmg = Grass.Fire; Firedmg = Fire.Fire; Waterdmg = Water.Fire; Electricdmg = Electric.Fire; Icedmg = Ice.Fire; Flyingdmg = Flying.Fire; Bugdmg = Bug.Fire; Poisondmg = Poison.Fire; Grounddmg = Ground.Fire; Rockdmg = Rock.Fire; Fightingdmg = Fighting.Fire; Psychicdmg = Psychic.Fire; Ghostdmg = Ghost.Fire; Dragondmg = Dragon.Fire; Darkdmg = Dark.Fire; Steeldmg = Steel.Fire; Fairydmg = Fairy.Fire; } if (t1 == 'Water') { Normaldmg = Normal.Water; Grassdmg = Grass.Water; Firedmg = Fire.Water; Waterdmg = Water.Water; Electricdmg = Electric.Water; Icedmg = Ice.Water; Flyingdmg = Flying.Water; Bugdmg = Bug.Water; Poisondmg = Poison.Water; Grounddmg = Ground.Water; Rockdmg = Rock.Water; Fightingdmg = Fighting.Water; Psychicdmg = Psychic.Water; Ghostdmg = Ghost.Water; Dragondmg = Dragon.Water; Darkdmg = Dark.Water; Steeldmg = Steel.Water; Fairydmg = Fairy.Water; } if (t1 == 'Electric') { Normaldmg = Normal.Electric; Grassdmg = Grass.Electric; Firedmg = Fire.Electric; Waterdmg = Water.Electric; Electricdmg = Electric.Electric; Icedmg = Ice.Electric; Flyingdmg = Flying.Electric; Bugdmg = Bug.Electric; Poisondmg = Poison.Electric; Grounddmg = Ground.Electric; Rockdmg = Rock.Electric; Fightingdmg = Fighting.Electric; Psychicdmg = Psychic.Electric; Ghostdmg = Ghost.Electric; Dragondmg = Dragon.Electric; Darkdmg = Dark.Electric; Steeldmg = Steel.Electric; Fairydmg = Fairy.Electric; } if (t1 == 'Ice') { Normaldmg = Normal.Ice; Grassdmg = Grass.Ice; Firedmg = Fire.Ice; Waterdmg = Water.Ice; Electricdmg = Electric.Ice; Icedmg = Ice.Ice; Flyingdmg = Flying.Ice; Bugdmg = Bug.Ice; Poisondmg = Poison.Ice; Grounddmg = Ground.Ice; Rockdmg = Rock.Ice; Fightingdmg = Fighting.Ice; Psychicdmg = Psychic.Ice; Ghostdmg = Ghost.Ice; Dragondmg = Dragon.Ice; Darkdmg = Dark.Ice; Steeldmg = Steel.Ice; Fairydmg = Fairy.Ice; } if (t1 == 'Flying') { Normaldmg = Normal.Flying; Grassdmg = Grass.Flying; Firedmg = Fire.Flying; Waterdmg = Water.Flying; Electricdmg = Electric.Flying; Icedmg = Ice.Flying; Flyingdmg = Flying.Flying; Bugdmg = Bug.Flying; Poisondmg = Poison.Flying; Grounddmg = Ground.Flying; Rockdmg = Rock.Flying; Fightingdmg = Fighting.Flying; Psychicdmg = Psychic.Flying; Ghostdmg = Ghost.Flying; Dragondmg = Dragon.Flying; Darkdmg = Dark.Flying; Steeldmg = Steel.Flying; Fairydmg = Fairy.Flying; } if (t1 == 'Bug') { Normaldmg = Normal.Bug; Grassdmg = Grass.Bug; Firedmg = Fire.Bug; Waterdmg = Water.Bug; Electricdmg = Electric.Bug; Icedmg = Ice.Bug; Flyingdmg= Flying.Bug; Bugdmg = Bug.Bug; Poisondmg = Poison.Bug; Grounddmg = Ground.Bug; Rockdmg = Rock.Bug; Fightingdmg = Fighting.Bug; Psychicdmg = Psychic.Bug; Ghostdmg = Ghost.Bug; Dragondmg = Dragon.Bug; Darkdmg = Dark.Bug; Steeldmg = Steel.Bug; Fairydmg = Fairy.Bug; } if (t1 == 'Poison') { Normaldmg = Normal.Poison; Grassdmg = Grass.Poison; Firedmg = Fire.Poison; Waterdmg = Water.Poison; Electricdmg = Electric.Poison; Icedmg = Ice.Poison; Flyingdmg= Flying.Poison; Bugdmg = Bug.Poison; Poisondmg = Poison.Poison; Grounddmg = Ground.Poison; Rockdmg = Rock.Poison; Fightingdmg = Fighting.Poison; Psychicdmg = Psychic.Poison; Ghostdmg = Ghost.Poison; Dragondmg = Dragon.Poison; Darkdmg = Dark.Poison; Steeldmg = Steel.Poison; Fairydmg = Fairy.Poison; } if (t1 == 'Ground') { Normaldmg = Normal.Ground; Grassdmg = Grass.Ground; Firedmg = Fire.Ground; Waterdmg = Water.Ground; Electricdmg = Electric.Ground; Icedmg = Ice.Ground; Flyingdmg= Flying.Ground; Bugdmg = Bug.Ground; Poisondmg = Poison.Ground; Grounddmg = Ground.Ground; Rockdmg = Rock.Ground; Fightingdmg = Fighting.Ground; Psychicdmg = Psychic.Ground; Ghostdmg = Ghost.Ground; Dragondmg = Dragon.Ground; Darkdmg = Dark.Ground; Steeldmg = Steel.Ground; Fairydmg = Fairy.Ground; } if (t1 == 'Rock') { Normaldmg = Normal.Rock; Grassdmg = Grass.Rock; Firedmg = Fire.Rock; Waterdmg = Water.Rock; Electricdmg = Electric.Rock; Icedmg = Ice.Rock; Flyingdmg= Flying.Rock; Bugdmg = Bug.Rock; Poisondmg = Poison.Rock; Grounddmg= Ground.Rock; Rockdmg = Rock.Rock; Fightingdmg = Fighting.Rock; Psychicdmg = Psychic.Rock; Ghostdmg = Ghost.Rock; Dragondmg = Dragon.Rock; Darkdmg = Dark.Rock; Steeldmg = Steel.Rock; Fairydmg = Fairy.Rock; } if (t1 == 'Fighting') { Normaldmg = Normal.Fighting; Grassdmg = Grass.Fighting; Firedmg = Fire.Fighting; Waterdmg = Water.Fighting; Electricdmg = Electric.Fighting; Icedmg = Ice.Fighting; Flyingdmg= Flying.Fighting; Bugdmg = Bug.Fighting; Poisondmg = Poison.Fighting; Grounddmg= Ground.Fighting; Rockdmg = Rock.Fighting; Fightingdmg = Fighting.Fighting; Psychicdmg = Psychic.Fighting; Ghostdmg = Ghost.Fighting; Dragondmg = Dragon.Fighting; Darkdmg = Dark.Fighting; Steeldmg = Steel.Fighting; Fairydmg = Fairy.Fighting; } if (t1 == 'Psychic') { Normaldmg = Normal.Psychic; Grassdmg = Grass.Psychic; Firedmg = Fire.Psychic; Waterdmg = Water.Psychic; Electricdmg = Electric.Psychic; Icedmg = Ice.Psychic; Flyingdmg= Flying.Psychic; Bugdmg = Bug.Psychic; Poisondmg = Poison.Psychic; Grounddmg= Ground.Psychic; Rockdmg = Rock.Psychic; Fightingdmg = Fighting.Psychic; Psychicdmg = Psychic.Psychic; Ghostdmg = Ghost.Psychic; Dragondmg = Dragon.Psychic; Darkdmg = Dark.Psychic; Steeldmg = Steel.Psychic; Fairydmg = Fairy.Psychic; } if (t1 == 'Ghost') { Normaldmg = Normal.Ghost; Grassdmg = Grass.Ghost; Firedmg = Fire.Ghost; Waterdmg = Water.Ghost; Electricdmg = Electric.Ghost; Icedmg = Ice.Ghost; Flyingdmg= Flying.Ghost; Bugdmg = Bug.Ghost; Poisondmg = Poison.Ghost; Grounddmg= Ground.Ghost; Rockdmg = Rock.Ghost; Fightingdmg = Fighting.Ghost; Psychicdmg = Psychic.Ghost; Ghostdmg = Ghost.Ghost; Dragondmg = Dragon.Ghost; Darkdmg = Dark.Ghost; Steeldmg = Steel.Ghost; Fairydmg = Fairy.Ghost; } if (t1 == 'Dragon') { Normaldmg = Normal.Dragon; Grassdmg = Grass.Dragon; Firedmg = Fire.Dragon; Waterdmg = Water.Dragon; Electricdmg = Electric.Dragon; Icedmg = Ice.Dragon; Flyingdmg= Flying.Dragon; Bugdmg = Bug.Dragon; Poisondmg = Poison.Dragon; Grounddmg= Ground.Dragon; Rockdmg = Rock.Dragon; Fightingdmg = Fighting.Dragon; Psychicdmg = Psychic.Dragon; Ghostdmg = Ghost.Dragon; Dragondmg = Dragon.Dragon; Darkdmg = Dark.Dragon; Steeldmg = Steel.Dragon; Fairydmg = Fairy.Dragon; } if (t1 == 'Dark') { Normaldmg = Normal.Dark; Grassdmg = Grass.Dark; Firedmg = Fire.Dark; Waterdmg = Water.Dark; Electricdmg = Electric.Dark; Icedmg = Ice.Dark; Flyingdmg= Flying.Dark; Bugdmg = Bug.Dark; Poisondmg = Poison.Dark; Grounddmg= Ground.Dark; Rockdmg = Rock.Dark; Fightingdmg = Fighting.Dark; Psychicdmg = Psychic.Dark; Ghostdmg = Ghost.Dark; Dragondmg = Dragon.Dark; Darkdmg = Dark.Dark; Steeldmg = Steel.Dark; Fairydmg = Fairy.Dark; } if (t1 == 'Steel') { Normaldmg = Normal.Steel; Grassdmg = Grass.Steel; Firedmg = Fire.Steel; Waterdmg = Water.Steel; Electricdmg = Electric.Steel; Icedmg = Ice.Steel; Flyingdmg= Flying.Steel; Bugdmg = Bug.Steel; Poisondmg = Poison.Steel; Grounddmg= Ground.Steel; Rockdmg = Rock.Steel; Fightingdmg = Fighting.Steel; Psychicdmg = Psychic.Steel; Ghostdmg = Ghost.Steel; Dragondmg = Dragon.Steel; Darkdmg = Dark.Steel; Steeldmg = Steel.Steel; Fairydmg = Fairy.Steel; } if (t1 == 'Fairy') { Normaldmg = Normal.Fairy; Grassdmg = Grass.Fairy; Firedmg = Fire.Fairy; Waterdmg = Water.Fairy; Electricdmg = Electric.Fairy; Icedmg = Ice.Fairy; Flyingdmg= Flying.Fairy; Bugdmg = Bug.Fairy; Poisondmg = Poison.Fairy; Grounddmg= Ground.Fairy; Rockdmg = Rock.Fairy; Fightingdmg = Fighting.Fairy; Psychicdmg = Psychic.Fairy; Ghostdmg = Ghost.Fairy; Dragondmg = Dragon.Fairy; Darkdmg = Dark.Fairy; Steeldmg= Steel.Fairy; Fairydmg = Fairy.Fairy; }
+		
+			var Normaldmg2 = "";
+		var Grassdmg2 = "";
+		var Firedmg2 = "";
+		var Waterdmg2 = "";
+		var Electricdmg2 = "";
+		var Icedmg2 = "";
+		var Flyingdmg2 = "";
+		var Bugdmg2 = "";
+		var Poisondmg2 = "";
+		var Grounddmg2 = "";
+		var Rockdmg2 = "";
+		var Fightingdmg2 = "";
+		var Psychicdmg2 = "";
+		var Ghostdmg2 = "";
+		var Dragondmg2 = "";
+		var Darkdmg2 = "";
+		var Steeldmg2 = "";
+		var Fairydmg2 = "";
+		
+if (t2 == 'Normal') { Normaldmg2 = Normal.Normal; Grassdmg2 = Grass.Normal; Firedmg2 = Fire.Normal; Waterdmg2 = Water.Normal; Electricdmg2 = Electric.Normal; Icedmg2 = Ice.Normal; Flyingdmg2 = Flying.Normal; Bugdmg2 = Bug.Normal; Poisondmg2 = Poison.Normal; Grounddmg2 = Ground.Normal; Rockdmg2 = Rock.Normal; Fightingdmg2 = Fighting.Normal; Psychicdmg2 = Psychic.Normal; Ghostdmg2 = Ghost.Normal; Dragondmg2 = Dragon.Normal; Darkdmg2 = Dark.Normal; Steeldmg2 = Steel.Normal; Fairydmg2 = Fairy.Normal; } if (t2 == 'Grass') { Normaldmg2 = Normal.Grass; Grassdmg2 = Grass.Grass; Firedmg2 = Fire.Grass; Waterdmg2 = Water.Grass; Electricdmg2 = Electric.Grass; Icedmg2 = Ice.Grass; Flyingdmg2 = Flying.Grass; Bugdmg2 = Bug.Grass; Poisondmg2 = Poison.Grass; Grounddmg2 = Ground.Grass; Rockdmg2 = Rock.Grass; Fightingdmg2 = Fighting.Grass; Psychicdmg2 = Psychic.Grass; Ghostdmg2 = Ghost.Grass; Dragondmg2 = Dragon.Grass; Darkdmg2 = Dark.Grass; Steeldmg2 = Steel.Grass; Fairydmg2 = Fairy.Grass; } if (t2 == 'Fire') { Normaldmg2 = Normal.Fire; Grassdmg2 = Grass.Fire; Firedmg2 = Fire.Fire; Waterdmg2 = Water.Fire; Electricdmg2 = Electric.Fire; Icedmg2 = Ice.Fire; Flyingdmg2 = Flying.Fire; Bugdmg2 = Bug.Fire; Poisondmg2 = Poison.Fire; Grounddmg2 = Ground.Fire; Rockdmg2 = Rock.Fire; Fightingdmg2 = Fighting.Fire; Psychicdmg2 = Psychic.Fire; Ghostdmg2 = Ghost.Fire; Dragondmg2 = Dragon.Fire; Darkdmg2 = Dark.Fire; Steeldmg2 = Steel.Fire; Fairydmg2 = Fairy.Fire; } if (t2 == 'Water') { Normaldmg2 = Normal.Water; Grassdmg2 = Grass.Water; Firedmg2 = Fire.Water; Waterdmg2 = Water.Water; Electricdmg2 = Electric.Water; Icedmg2 = Ice.Water; Flyingdmg2 = Flying.Water; Bugdmg2 = Bug.Water; Poisondmg2 = Poison.Water; Grounddmg2 = Ground.Water; Rockdmg2 = Rock.Water; Fightingdmg2 = Fighting.Water; Psychicdmg2 = Psychic.Water; Ghostdmg2 = Ghost.Water; Dragondmg2 = Dragon.Water; Darkdmg2 = Dark.Water; Steeldmg2 = Steel.Water; Fairydmg2 = Fairy.Water; } if (t2 == 'Electric') { Normaldmg2 = Normal.Electric; Grassdmg2 = Grass.Electric; Firedmg2 = Fire.Electric; Waterdmg2 = Water.Electric; Electricdmg2 = Electric.Electric; Icedmg2 = Ice.Electric; Flyingdmg2 = Flying.Electric; Bugdmg2 = Bug.Electric; Poisondmg2 = Poison.Electric; Grounddmg2 = Ground.Electric; Rockdmg2 = Rock.Electric; Fightingdmg2 = Fighting.Electric; Psychicdmg2 = Psychic.Electric; Ghostdmg2 = Ghost.Electric; Dragondmg2 = Dragon.Electric; Darkdmg2 = Dark.Electric; Steeldmg2 = Steel.Electric; Fairydmg2 = Fairy.Electric; } if (t2 == 'Ice') { Normaldmg2 = Normal.Ice; Grassdmg2 = Grass.Ice; Firedmg2 = Fire.Ice; Waterdmg2 = Water.Ice; Electricdmg2 = Electric.Ice; Icedmg2 = Ice.Ice; Flyingdmg2 = Flying.Ice; Bugdmg2 = Bug.Ice; Poisondmg2 = Poison.Ice; Grounddmg2 = Ground.Ice; Rockdmg2 = Rock.Ice; Fightingdmg2 = Fighting.Ice; Psychicdmg2 = Psychic.Ice; Ghostdmg2 = Ghost.Ice; Dragondmg2 = Dragon.Ice; Darkdmg2 = Dark.Ice; Steeldmg2 = Steel.Ice; Fairydmg2 = Fairy.Ice; } if (t2 == 'Flying') { Normaldmg2 = Normal.Flying; Grassdmg2 = Grass.Flying; Firedmg2 = Fire.Flying; Waterdmg2 = Water.Flying; Electricdmg2 = Electric.Flying; Icedmg2 = Ice.Flying; Flyingdmg2 = Flying.Flying; Bugdmg2 = Bug.Flying; Poisondmg2 = Poison.Flying; Grounddmg2 = Ground.Flying; Rockdmg2 = Rock.Flying; Fightingdmg2 = Fighting.Flying; Psychicdmg2 = Psychic.Flying; Ghostdmg2 = Ghost.Flying; Dragondmg2 = Dragon.Flying; Darkdmg2 = Dark.Flying; Steeldmg2 = Steel.Flying; Fairydmg2 = Fairy.Flying; } if (t2 == 'Bug') { Normaldmg2 = Normal.Bug; Grassdmg2 = Grass.Bug; Firedmg2 = Fire.Bug; Waterdmg2 = Water.Bug; Electricdmg2 = Electric.Bug; Icedmg2 = Ice.Bug; Flyingdmg2= Flying.Bug; Bugdmg2 = Bug.Bug; Poisondmg2 = Poison.Bug; Grounddmg2 = Ground.Bug; Rockdmg2 = Rock.Bug; Fightingdmg2 = Fighting.Bug; Psychicdmg2 = Psychic.Bug; Ghostdmg2 = Ghost.Bug; Dragondmg2 = Dragon.Bug; Darkdmg2 = Dark.Bug; Steeldmg2 = Steel.Bug; Fairydmg2 = Fairy.Bug; } if (t2 == 'Poison') { Normaldmg2 = Normal.Poison; Grassdmg2 = Grass.Poison; Firedmg2 = Fire.Poison; Waterdmg2 = Water.Poison; Electricdmg2 = Electric.Poison; Icedmg2 = Ice.Poison; Flyingdmg2= Flying.Poison; Bugdmg2 = Bug.Poison; Poisondmg2 = Poison.Poison; Grounddmg2 = Ground.Poison; Rockdmg2 = Rock.Poison; Fightingdmg2 = Fighting.Poison; Psychicdmg2 = Psychic.Poison; Ghostdmg2 = Ghost.Poison; Dragondmg2 = Dragon.Poison; Darkdmg2 = Dark.Poison; Steeldmg2 = Steel.Poison; Fairydmg2 = Fairy.Poison; } if (t2 == 'Ground') { Normaldmg2 = Normal.Ground; Grassdmg2 = Grass.Ground; Firedmg2 = Fire.Ground; Waterdmg2 = Water.Ground; Electricdmg2 = Electric.Ground; Icedmg2 = Ice.Ground; Flyingdmg2= Flying.Ground; Bugdmg2 = Bug.Ground; Poisondmg2 = Poison.Ground; Grounddmg2 = Ground.Ground; Rockdmg2 = Rock.Ground; Fightingdmg2 = Fighting.Ground; Psychicdmg2 = Psychic.Ground; Ghostdmg2 = Ghost.Ground; Dragondmg2 = Dragon.Ground; Darkdmg2 = Dark.Ground; Steeldmg2 = Steel.Ground; Fairydmg2 = Fairy.Ground; } if (t2 == 'Rock') { Normaldmg2 = Normal.Rock; Grassdmg2 = Grass.Rock; Firedmg2 = Fire.Rock; Waterdmg2 = Water.Rock; Electricdmg2 = Electric.Rock; Icedmg2 = Ice.Rock; Flyingdmg2= Flying.Rock; Bugdmg2 = Bug.Rock; Poisondmg2 = Poison.Rock; Grounddmg2= Ground.Rock; Rockdmg2 = Rock.Rock; Fightingdmg2 = Fighting.Rock; Psychicdmg2 = Psychic.Rock; Ghostdmg2 = Ghost.Rock; Dragondmg2 = Dragon.Rock; Darkdmg2 = Dark.Rock; Steeldmg2 = Steel.Rock; Fairydmg2 = Fairy.Rock; } if (t2 == 'Fighting') { Normaldmg2 = Normal.Fighting; Grassdmg2 = Grass.Fighting; Firedmg2 = Fire.Fighting; Waterdmg2 = Water.Fighting; Electricdmg2 = Electric.Fighting; Icedmg2 = Ice.Fighting; Flyingdmg2= Flying.Fighting; Bugdmg2 = Bug.Fighting; Poisondmg2 = Poison.Fighting; Grounddmg2= Ground.Fighting; Rockdmg2 = Rock.Fighting; Fightingdmg2 = Fighting.Fighting; Psychicdmg2 = Psychic.Fighting; Ghostdmg2 = Ghost.Fighting; Dragondmg2 = Dragon.Fighting; Darkdmg2 = Dark.Fighting; Steeldmg2 = Steel.Fighting; Fairydmg2 = Fairy.Fighting; } if (t2 == 'Psychic') { Normaldmg2 = Normal.Psychic; Grassdmg2 = Grass.Psychic; Firedmg2 = Fire.Psychic; Waterdmg2 = Water.Psychic; Electricdmg2 = Electric.Psychic; Icedmg2 = Ice.Psychic; Flyingdmg2= Flying.Psychic; Bugdmg2 = Bug.Psychic; Poisondmg2 = Poison.Psychic; Grounddmg2= Ground.Psychic; Rockdmg2 = Rock.Psychic; Fightingdmg2 = Fighting.Psychic; Psychicdmg2 = Psychic.Psychic; Ghostdmg2 = Ghost.Psychic; Dragondmg2 = Dragon.Psychic; Darkdmg2 = Dark.Psychic; Steeldmg2 = Steel.Psychic; Fairydmg2 = Fairy.Psychic; } if (t2 == 'Ghost') { Normaldmg2 = Normal.Ghost; Grassdmg2 = Grass.Ghost; Firedmg2 = Fire.Ghost; Waterdmg2 = Water.Ghost; Electricdmg2 = Electric.Ghost; Icedmg2 = Ice.Ghost; Flyingdmg2= Flying.Ghost; Bugdmg2 = Bug.Ghost; Poisondmg2 = Poison.Ghost; Grounddmg2= Ground.Ghost; Rockdmg2 = Rock.Ghost; Fightingdmg2 = Fighting.Ghost; Psychicdmg2 = Psychic.Ghost; Ghostdmg2 = Ghost.Ghost; Dragondmg2 = Dragon.Ghost; Darkdmg2 = Dark.Ghost; Steeldmg2 = Steel.Ghost; Fairydmg2 = Fairy.Ghost; } if (t2 == 'Dragon') { Normaldmg2 = Normal.Dragon; Grassdmg2 = Grass.Dragon; Firedmg2 = Fire.Dragon; Waterdmg2 = Water.Dragon; Electricdmg2 = Electric.Dragon; Icedmg2 = Ice.Dragon; Flyingdmg2= Flying.Dragon; Bugdmg2 = Bug.Dragon; Poisondmg2 = Poison.Dragon; Grounddmg2= Ground.Dragon; Rockdmg2 = Rock.Dragon; Fightingdmg2 = Fighting.Dragon; Psychicdmg2 = Psychic.Dragon; Ghostdmg2 = Ghost.Dragon; Dragondmg2 = Dragon.Dragon; Darkdmg2 = Dark.Dragon; Steeldmg2 = Steel.Dragon; Fairydmg2 = Fairy.Dragon; } if (t2 == 'Dark') { Normaldmg2 = Normal.Dark; Grassdmg2 = Grass.Dark; Firedmg2 = Fire.Dark; Waterdmg2 = Water.Dark; Electricdmg2 = Electric.Dark; Icedmg2 = Ice.Dark; Flyingdmg2= Flying.Dark; Bugdmg2 = Bug.Dark; Poisondmg2 = Poison.Dark; Grounddmg2= Ground.Dark; Rockdmg2 = Rock.Dark; Fightingdmg2 = Fighting.Dark; Psychicdmg2 = Psychic.Dark; Ghostdmg2 = Ghost.Dark; Dragondmg2 = Dragon.Dark; Darkdmg2 = Dark.Dark; Steeldmg2 = Steel.Dark; Fairydmg2 = Fairy.Dark; } if (t2 == 'Steel') { Normaldmg2 = Normal.Steel; Grassdmg2 = Grass.Steel; Firedmg2 = Fire.Steel; Waterdmg2 = Water.Steel; Electricdmg2 = Electric.Steel; Icedmg2 = Ice.Steel; Flyingdmg2= Flying.Steel; Bugdmg2 = Bug.Steel; Poisondmg2 = Poison.Steel; Grounddmg2= Ground.Steel; Rockdmg2 = Rock.Steel; Fightingdmg2 = Fighting.Steel; Psychicdmg2 = Psychic.Steel; Ghostdmg2 = Ghost.Steel; Dragondmg2 = Dragon.Steel; Darkdmg2 = Dark.Steel; Steeldmg2 = Steel.Steel; Fairydmg2 = Fairy.Steel; } if (t2 == 'Fairy') { Normaldmg2 = Normal.Fairy; Grassdmg2 = Grass.Fairy; Firedmg2 = Fire.Fairy; Waterdmg2 = Water.Fairy; Electricdmg2 = Electric.Fairy; Icedmg2 = Ice.Fairy; Flyingdmg2= Flying.Fairy; Bugdmg2 = Bug.Fairy; Poisondmg2 = Poison.Fairy; Grounddmg2= Ground.Fairy; Rockdmg2 = Rock.Fairy; Fightingdmg2 = Fighting.Fairy; Psychicdmg2 = Psychic.Fairy; Ghostdmg2 = Ghost.Fairy; Dragondmg2 = Dragon.Fairy; Darkdmg2 = Dark.Fairy; Steeldmg2= Steel.Fairy; Fairydmg2 = Fairy.Fairy; }
 
-	if ((t1 == "Fighting" && t2 == "Normal") ||( t1 == "Normal" && t2 == "Fighting")) {
-		Ghostdmg = "No Effect";
-		Bugdmg = "Resisted";
-		Darkdmg = "Resisted";
-		Rockdmg = "Resisted";
-		Fairydmg = "Super Effective;
-		Flyingdmg = "Super Effective";
-		Psychicdmg = "Super Effective";
-		Fightingdmg = "Super Effective";
+	if ( t2 == "Normal" ) {
+		if (Normaldmg == "Super Effective" && Normaldmg2 == "Super Effective") {
+			Normaldmg = "Doubly Effective";
+		}
+		if (Normaldmg == "Resisted" && Normaldmg2 == "Resisted") {
+			Normaldmg = "Doubly Resisted";
+		}
+		if (Normaldmg == "No Effect" || Normaldmg2 == "No Effect") {
+			Normaldmg = "No Effect";
+		}
+		if ((Normaldmg == "Neutral"  && Normaldmg2 == "Super Effective") || (Normaldmg == "Super Effective"  && Normaldmg2 == "Neutral")) {
+			Normaldmg = "Super Effective";
+		}
+		if ((Normaldmg == "Neutral"  && Normaldmg2 == "Resisted") || (Normaldmg == "Resisted"  && Normaldmg2 == "Neutral")) {
+			Normaldmg = "Resisted";
+		}
+		if ((Normaldmg == "Super Effective"  && Normaldmg2 == "Resisted") || (Normaldmg == "Resisted"  && Normaldmg2 == "Super Effective")) {
+			Normaldmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Flying" && t2 == "Normal") ||( t1 == "Normal" && t2 == "Flying")) {
-		Ghostdmg = "No Effect";
-		Grounddmg = "No Effect";
-		Bugdmg = "Resisted";
-		Grassdmg = "Resisted";
-		Electricdmg = "Super Effective;
-		Icedmg = "Super Effective";
-		Rockdmg = "Super Effective";
+	if ( t2 == "Grass" ) {
+		if (Grassdmg == "Super Effective" && Grassdmg2 == "Super Effective") {
+			Grassdmg = "Doubly Effective";
+		}
+		if (Grassdmg == "Resisted" && Grassdmg2 == "Resisted") {
+			Grassdmg = "Doubly Resisted";
+		}
+		if (Grassdmg == "No Effect" || Grassdmg2 == "No Effect") {
+			Grassdmg = "No Effect";
+		}
+		if ((Grassdmg == "Neutral"  && Grassdmg2 == "Super Effective") || (Grassdmg == "Super Effective"  && Grassdmg2 == "Neutral")) {
+			Grassdmg = "Super Effective";
+		}
+		if ((Grassdmg == "Neutral"  && Grassdmg2 == "Resisted") || (Grassdmg == "Resisted"  && Grassdmg2 == "Neutral")) {
+			Grassdmg = "Resisted";
+		}
+		if ((Grassdmg == "Super Effective"  && Grassdmg2 == "Resisted") || (Grassdmg == "Resisted"  && Grassdmg2 == "Super Effective")) {
+			Grassdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Ground" && t2 == "Normal") ||( t1 == "Normal" && t2 == "Ground")) {
-		Ghostdmg = "No Effect";
-		Electricdmg = "No Effect";
-		Poisondmg = "Resisted";
-		Rockdmg = "Resisted";
-		Fightingdmg = "Super Effective;
-		Grassdmg = "Super Effective";
-		Icedmg = "Super Effective";
-		Waterdmg = "Super Effective";
+	if ( t2 == "Fire" ) {
+		if (Firedmg == "Super Effective" && Firedmg2 == "Super Effective") {
+			Firedmg = "Doubly Effective";
+		}
+		if (Firedmg == "Resisted" && Firedmg2 == "Resisted") {
+			Firedmg = "Doubly Resisted";
+		}
+		if (Firedmg == "No Effect" || Firedmg2 == "No Effect") {
+			Firedmg = "No Effect";
+		}
+		if ((Firedmg == "Neutral"  && Firedmg2 == "Super Effective") || (Firedmg == "Super Effective"  && Firedmg2 == "Neutral")) {
+			Firedmg = "Super Effective";
+		}
+		if ((Firedmg == "Neutral"  && Firedmg2 == "Resisted") || (Firedmg == "Resisted"  && Firedmg2 == "Neutral")) {
+			Firedmg = "Resisted";
+		}
+		if ((Firedmg == "Super Effective"  && Firedmg2 == "Resisted") || (Firedmg == "Resisted"  && Firedmg2 == "Super Effective")) {
+			Firedmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Fire" && t2 == "Normal") ||( t1 == "Normal" && t2 == "Fire")) {
-		Ghostdmg = "No Effect";
-		Bugdmg = "Resisted";
-		Fairydmg = "Resisted";
-		Firedmg = "Resisted";
-		Grassdmg = "Resisted";
-		Icedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Fightingdmg = "Super Effective;
-		Grounddmg = "Super Effective";
-		Rockdmg = "Super Effective";
-		Waterdmg = "Super Effective";
+	if ( t2 == "Water" ) {
+		if (Waterdmg == "Super Effective" && Waterdmg2 == "Super Effective") {
+			Waterdmg = "Doubly Effective";
+		}
+		if (Waterdmg == "Resisted" && Waterdmg2 == "Resisted") {
+			Waterdmg = "Doubly Resisted";
+		}
+		if (Waterdmg == "No Effect" || Waterdmg2 == "No Effect") {
+			Waterdmg = "No Effect";
+		}
+		if ((Waterdmg == "Neutral"  && Waterdmg2 == "Super Effective") || (Waterdmg == "Super Effective"  && Waterdmg2 == "Neutral")) {
+			Waterdmg = "Super Effective";
+		}
+		if ((Waterdmg == "Neutral"  && Waterdmg2 == "Resisted") || (Waterdmg == "Resisted"  && Waterdmg2 == "Neutral")) {
+			Waterdmg = "Resisted";
+		}
+		if ((Waterdmg == "Super Effective"  && Waterdmg2 == "Resisted") || (Waterdmg == "Resisted"  && Waterdmg2 == "Super Effective")) {
+			Waterdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Water" && t2 == "Normal") ||( t1 == "Normal" && t2 == "Water")) {
-		Ghostdmg = "No Effect";
-		Firedmg = "Resisted";
-		Icedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Firedmg = "Resisted";
-		Fightingdmg = "Super Effective;
-		Electricdmg = "Super Effective";
-		Grassdmg = "Super Effective";
+	if ( t2 == "Electric" ) {
+		if (Electricdmg == "Super Effective" && Electricdmg2 == "Super Effective") {
+			Electricdmg = "Doubly Effective";
+		}
+		if (Electricdmg == "Resisted" && Electricdmg2 == "Resisted") {
+			Electricdmg = "Doubly Resisted";
+		}
+		if (Electricdmg == "No Effect" || Electricdmg2 == "No Effect") {
+			Electricdmg = "No Effect";
+		}
+		if ((Electricdmg == "Neutral"  && Electricdmg2 == "Super Effective") || (Electricdmg == "Super Effective"  && Electricdmg2 == "Neutral")) {
+			Electricdmg = "Super Effective";
+		}
+		if ((Electricdmg == "Neutral"  && Electricdmg2 == "Resisted") || (Electricdmg == "Resisted"  && Electricdmg2 == "Neutral")) {
+			Electricdmg = "Resisted";
+		}
+		if ((Electricdmg == "Super Effective"  && Electricdmg2 == "Resisted") || (Electricdmg == "Resisted"  && Electricdmg2 == "Super Effective")) {
+			Electricdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Flying" && t2 == "Bug") ||( t1 == "Bug" && t2 == "Flying")) {
-		Grounddmg = "No Effect";
-		Grassdmg = "Resisted";
-		Fightingdmg = "Resisted";
-		Bugdmg = "Resisted";
-		Firedmg = "Super Effective";
-		Electricdmg = "Super Effective;
-		Flyingdmg = "Super Effective";
-		Icedmg = "Super Effective";
-		Rockdmg = "Super Effective";
+	if ( t2 == "Ice" ) {
+		if (Icedmg == "Super Effective" && Icedmg2 == "Super Effective") {
+			Icedmg = "Doubly Effective";
+		}
+		if (Icedmg == "Resisted" && Icedmg2 == "Resisted") {
+			Icedmg = "Doubly Resisted";
+		}
+		if (Icedmg == "No Effect" || Icedmg2 == "No Effect") {
+			Icedmg = "No Effect";
+		}
+		if ((Icedmg == "Neutral"  && Icedmg2 == "Super Effective") || (Icedmg == "Super Effective"  && Icedmg2 == "Neutral")) {
+			Icedmg = "Super Effective";
+		}
+		if ((Icedmg == "Neutral"  && Icedmg2 == "Resisted") || (Icedmg == "Resisted"  && Icedmg2 == "Neutral")) {
+			Icedmg = "Resisted";
+		}
+		if ((Icedmg == "Super Effective"  && Icedmg2 == "Resisted") || (Icedmg == "Resisted"  && Icedmg2 == "Super Effective")) {
+			Icedmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Poison" && t2 == "Grass") ||( t1 == "Grass" && t2 == "Poison")) {
-		Grassdmg = "Resisted";
-		Fightingdmg = "Resisted";
-		Electricdmg = "Resisted";
-		Fairydmg = "Resisted";
-		Waterdmg = "Resisted";
-		Firedmg = "Super Effective";
-		Psychicdmg = "Super Effective;
-		Flyingdmg = "Super Effective";
-		Icedmg = "Super Effective";
-		Rockdmg = "Super Effective";
+	if ( t2 == "Flying" ) {
+		if (Flyingdmg == "Super Effective" && Flyingdmg2 == "Super Effective") {
+			Flyingdmg = "Doubly Effective";
+		}
+		if (Flyingdmg == "Resisted" && Flyingdmg2 == "Resisted") {
+			Flyingdmg = "Doubly Resisted";
+		}
+		if (Flyingdmg == "No Effect" || Flyingdmg2 == "No Effect") {
+			Flyingdmg = "No Effect";
+		}
+		if ((Flyingdmg == "Neutral"  && Flyingdmg2 == "Super Effective") || (Flyingdmg == "Super Effective"  && Flyingdmg2 == "Neutral")) {
+			Flyingdmg = "Super Effective";
+		}
+		if ((Flyingdmg == "Neutral"  && Flyingdmg2 == "Resisted") || (Flyingdmg == "Resisted"  && Flyingdmg2 == "Neutral")) {
+			Flyingdmg = "Resisted";
+		}
+		if ((Flyingdmg == "Super Effective"  && Flyingdmg2 == "Resisted") || (Flyingdmg == "Resisted"  && Flyingdmg2 == "Super Effective")) {
+			Flyingdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Poison" && t2 == "Bug") ||( t1 == "Bug" && t2 == "Poison")) {
-		Grassdmg = "Resisted";
-		Fightingdmg = "Resisted";
-		Bugdmg = "Resisted";
-		Fairydmg = "Resisted";
-		Poisondmg = "Resisted";
-		Firedmg = "Super Effective";
-		Psychicdmg = "Super Effective;
-		Flyingdmg = "Super Effective";
-		Rockdmg = "Super Effective";
+	if ( t2 == "Bug" ) {
+		if (Bugdmg == "Super Effective" && Bugdmg2 == "Super Effective") {
+			Bugdmg = "Doubly Effective";
+		}
+		if (Bugdmg == "Resisted" && Bugdmg2 == "Resisted") {
+			Bugdmg = "Doubly Resisted";
+		}
+		if (Bugdmg == "No Effect" || Bugdmg2 == "No Effect") {
+			Bugdmg = "No Effect";
+		}
+		if ((Bugdmg == "Neutral"  && Bugdmg2 == "Super Effective") || (Bugdmg == "Super Effective"  && Bugdmg2 == "Neutral")) {
+			Bugdmg = "Super Effective";
+		}
+		if ((Bugdmg == "Neutral"  && Bugdmg2 == "Resisted") || (Bugdmg == "Resisted"  && Bugdmg2 == "Neutral")) {
+			Bugdmg = "Resisted";
+		}
+		if ((Bugdmg == "Super Effective"  && Bugdmg2 == "Resisted") || (Bugdmg == "Resisted"  && Bugdmg2 == "Super Effective")) {
+			Bugdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Rock" && t2 == "Water") ||( t1 == "Water" && t2 == "Rock")) {
-		Firedmg = "Resisted";
-		Icedmg = "Resisted";
-		Flyingdmg = "Resisted";
-		Normaldmg = "Resisted";
-		Poisondmg = "Resisted";
-		Fightingdmg = "Super Effective";
-		Electricdmg = "Super Effective;
-		Grounddmg = "Super Effective";
-		Grassdmg = "Super Effective";
+	if ( t2 == "Poison" ) {
+		if (Poisondmg == "Super Effective" && Poisondmg2 == "Super Effective") {
+			Poisondmg = "Doubly Effective";
+		}
+		if (Poisondmg == "Resisted" && Poisondmg2 == "Resisted") {
+			Poisondmg = "Doubly Resisted";
+		}
+		if (Poisondmg == "No Effect" || Poisondmg2 == "No Effect") {
+			Poisondmg = "No Effect";
+		}
+		if ((Poisondmg == "Neutral"  && Poisondmg2 == "Super Effective") || (Poisondmg == "Super Effective"  && Poisondmg2 == "Neutral")) {
+			Poisondmg = "Super Effective";
+		}
+		if ((Poisondmg == "Neutral"  && Poisondmg2 == "Resisted") || (Poisondmg == "Resisted"  && Poisondmg2 == "Neutral")) {
+			Poisondmg = "Resisted";
+		}
+		if ((Poisondmg == "Super Effective"  && Poisondmg2 == "Resisted") || (Poisondmg == "Resisted"  && Poisondmg2 == "Super Effective")) {
+			Poisondmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Rock" && t2 == "Ground") ||( t1 == "Ground" && t2 == "Rock")) {
-		Electricdmg = "No Effect";
-		Poisondmg = "Resisted";
-		Flyingdmg = "Resisted";
-		Firedmg = "Resisted";
-		Normaldmg = "Resisted";
-		Rockdmg = "Resisted";
-		Fightingdmg = "Super Effective";
-		Grounddmg = "Super Effective;
-		Icedmg = "Super Effective";
-		Steeldmg = "Super Effective";
-		Waterdmg = "Super Effective";
-		Grassdmg = "Super Effective";
+	if ( t2 == "Ground" ) {
+		if (Grounddmg == "Super Effective" && Grounddmg2 == "Super Effective") {
+			Grounddmg = "Doubly Effective";
+		}
+		if (Grounddmg == "Resisted" && Grounddmg2 == "Resisted") {
+			Grounddmg = "Doubly Resisted";
+		}
+		if (Grounddmg == "No Effect" || Grounddmg2 == "No Effect") {
+			Grounddmg = "No Effect";
+		}
+		if ((Grounddmg == "Neutral"  && Grounddmg2 == "Super Effective") || (Grounddmg == "Super Effective"  && Grounddmg2 == "Neutral")) {
+			Grounddmg = "Super Effective";
+		}
+		if ((Grounddmg == "Neutral"  && Grounddmg2 == "Resisted") || (Grounddmg == "Resisted"  && Grounddmg2 == "Neutral")) {
+			Grounddmg = "Resisted";
+		}
+		if ((Grounddmg == "Super Effective"  && Grounddmg2 == "Resisted") || (Grounddmg == "Resisted"  && Grounddmg2 == "Super Effective")) {
+			Grounddmg = "Neutral";
+		}
 	}
 	
-		if ((t1 == "Water" && t2 == "Ground") ||( t1 == "Ground" && t2 == "water")) {
-		Electricdmg = "No Effect";
-		Poisondmg = "Resisted";
-		Rockdmg = "Resisted";
-		Firedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Grassdmg = "Super Effective";
+	if ( t2 == "Rock" ) {
+		if (Rockdmg == "Super Effective" && Rockdmg2 == "Super Effective") {
+			Rockdmg = "Doubly Effective";
+		}
+		if (Rockdmg == "Resisted" && Rockdmg2 == "Resisted") {
+			Rockdmg = "Doubly Resisted";
+		}
+		if (Rockdmg == "No Effect" || Rockdmg2 == "No Effect") {
+			Rockdmg = "No Effect";
+		}
+		if ((Rockdmg == "Neutral"  && Rockdmg2 == "Super Effective") || (Rockdmg == "Super Effective"  && Rockdmg2 == "Neutral")) {
+			Rockdmg = "Super Effective";
+		}
+		if ((Rockdmg == "Neutral"  && Rockdmg2 == "Resisted") || (Rockdmg == "Resisted"  && Rockdmg2 == "Neutral")) {
+			Rockdmg = "Resisted";
+		}
+		if ((Rockdmg == "Super Effective"  && Rockdmg2 == "Resisted") || (Rockdmg == "Resisted"  && Rockdmg2 == "Super Effective")) {
+			Rockdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Flying" && t2 == "Water") ||( t1 == "Water" && t2 == "Flying")) {
-		Grounddmg = "No Effect";
-		Bugdmg = "Resisted";
-		Fightingdmg = "Resisted";
-		Firedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Waterdmg = "Resisted";
-		Rockdmg = "Super Effective";
-		Electricdmg = "Super Effective";
+	if ( t2 == "Fighting" ) {
+		if (Fightingdmg == "Super Effective" && Fightingdmg2 == "Super Effective") {
+			Fightingdmg = "Doubly Effective";
+		}
+		if (Fightingdmg == "Resisted" && Fightingdmg2 == "Resisted") {
+			Fightingdmg = "Doubly Resisted";
+		}
+		if (Fightingdmg == "No Effect" || Fightingdmg2 == "No Effect") {
+			Fightingdmg = "No Effect";
+		}
+		if ((Fightingdmg == "Neutral"  && Fightingdmg2 == "Super Effective") || (Fightingdmg == "Super Effective"  && Fightingdmg2 == "Neutral")) {
+			Fightingdmg = "Super Effective";
+		}
+		if ((Fightingdmg == "Neutral"  && Fightingdmg2 == "Resisted") || (Fightingdmg == "Resisted"  && Fightingdmg2 == "Neutral")) {
+			Fightingdmg = "Resisted";
+		}
+		if ((Fightingdmg == "Super Effective"  && Fightingdmg2 == "Resisted") || (Fightingdmg == "Resisted"  && Fightingdmg2 == "Super Effective")) {
+			Fightingdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Fighting" && t2 == "Fire") ||( t1 == "Fire" && t2 == "Fighting")) {
-		Bugdmg = "Resisted";
-		Darkdmg = "Resisted";
-		Firedmg = "Resisted";
-		Grassdmg = "Resisted";
-		Icedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Flyingdmg = "Super Effective";
-		Grounddmg = "Super Effective";
-		Waterdmg = "Super Effective";
-		Psychicdmg = "Super Effective";
+	if ( t2 == "Psychic" ) {
+		if (Psychicdmg == "Super Effective" && Psychicdmg2 == "Super Effective") {
+			Psychicdmg = "Doubly Effective";
+		}
+		if (Psychicdmg == "Resisted" && Psychicdmg2 == "Resisted") {
+			Psychicdmg = "Doubly Resisted";
+		}
+		if (Psychicdmg == "No Effect" || Psychicdmg2 == "No Effect") {
+			Psychicdmg = "No Effect";
+		}
+		if ((Psychicdmg == "Neutral"  && Psychicdmg2 == "Super Effective") || (Psychicdmg == "Super Effective"  && Psychicdmg2 == "Neutral")) {
+			Psychicdmg = "Super Effective";
+		}
+		if ((Psychicdmg == "Neutral"  && Psychicdmg2 == "Resisted") || (Psychicdmg == "Resisted"  && Psychicdmg2 == "Neutral")) {
+			Psychicdmg = "Resisted";
+		}
+		if ((Psychicdmg == "Super Effective"  && Psychicdmg2 == "Resisted") || (Psychicdmg == "Resisted"  && Psychicdmg2 == "Super Effective")) {
+			Psychicdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Fighting" && t2 == "Fire") ||( t1 == "Fire" && t2 == "Fighting")) {
-		Bugdmg = "Resisted";
-		Darkdmg = "Resisted";
-		Firedmg = "Resisted";
-		Grassdmg = "Resisted";
-		Icedmg = "Resisted";
-		Steeldmg = "Resisted";
-		Flyingdmg = "Super Effective";
-		Grounddmg = "Super Effective";
-		Waterdmg = "Super Effective";
-		Psychicdmg = "Super Effective";
+	if ( t2 == "Dragon" ) {
+		if (Dragondmg == "Super Effective" && Dragondmg2 == "Super Effective") {
+			Dragondmg = "Doubly Effective";
+		}
+		if (Dragondmg == "Resisted" && Dragondmg2 == "Resisted") {
+			Dragondmg = "Doubly Resisted";
+		}
+		if (Dragondmg == "No Effect" || Dragondmg2 == "No Effect") {
+			Dragondmg = "No Effect";
+		}
+		if ((Dragondmg == "Neutral"  && Dragondmg2 == "Super Effective") || (Dragondmg == "Super Effective"  && Dragondmg2 == "Neutral")) {
+			Dragondmg = "Super Effective";
+		}
+		if ((Dragondmg == "Neutral"  && Dragondmg2 == "Resisted") || (Dragondmg == "Resisted"  && Dragondmg2 == "Neutral")) {
+			Dragondmg = "Resisted";
+		}
+		if ((Dragondmg == "Super Effective"  && Dragondmg2 == "Resisted") || (Dragondmg == "Resisted"  && Dragondmg2 == "Super Effective")) {
+			Dragondmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Flying" && t2 == "Psychic") ||( t1 == "Psychic" && t2 == "Flying")) {
-		Grounddmg = "No Effect";
-		Fightingdmg = "Resisted";
-		Psychicdmg = "Resisted";
-		Grassdmg = "Resisted";
-		Icedmg = "Super Effective";
-		Rockdmg = "Super Effective";
-		Ghostdmg = "Super Effective";
-		Electricdmg = "Super Effective";
-		Darkdmg = "Super Effective";
+	if ( t2 == "Ghost" ) {
+		if (Ghostdmg == "Super Effective" && Ghostdmg2 == "Super Effective") {
+			Ghostdmg = "Doubly Effective";
+		}
+		if (Ghostdmg == "Resisted" && Ghostdmg2 == "Resisted") {
+			Ghostdmg = "Doubly Resisted";
+		}
+		if (Ghostdmg == "No Effect" || Ghostdmg2 == "No Effect") {
+			Ghostdmg = "No Effect";
+		}
+		if ((Ghostdmg == "Neutral"  && Ghostdmg2 == "Super Effective") || (Ghostdmg == "Super Effective"  && Ghostdmg2 == "Neutral")) {
+			Ghostdmg = "Super Effective";
+		}
+		if ((Ghostdmg == "Neutral"  && Ghostdmg2 == "Resisted") || (Ghostdmg == "Resisted"  && Ghostdmg2 == "Neutral")) {
+			Ghostdmg = "Resisted";
+		}
+		if ((Ghostdmg == "Super Effective"  && Ghostdmg2 == "Resisted") || (Ghostdmg == "Resisted"  && Ghostdmg2 == "Super Effective")) {
+			Ghostdmg = "Neutral";
+		}
 	}
 	
-	if ((t1 == "Flying" && t2 == "Psychic") ||( t1 == "Psychic" && t2 == "Flying")) {
-		Grounddmg = "No Effect";
-		Fightingdmg = "Resisted";
-		Psychicdmg = "Resisted";
-		Grassdmg = "Resisted";
-		Icedmg = "Super Effective";
-		Rockdmg = "Super Effective";
-		Ghostdmg = "Super Effective";
-		Electricdmg = "Super Effective";
-		Darkdmg = "Super Effective";
+	if ( t2 == "Dark" ) {
+		if (Darkdmg == "Super Effective" && Darkdmg2 == "Super Effective") {
+			Darkdmg = "Doubly Effective";
+		}
+		if (Darkdmg == "Resisted" && Darkdmg2 == "Resisted") {
+			Darkdmg = "Doubly Resisted";
+		}
+		if (Darkdmg == "No Effect" || Darkdmg2 == "No Effect") {
+			Darkdmg = "No Effect";
+		}
+		if ((Darkdmg == "Neutral"  && Darkdmg2 == "Super Effective") || (Darkdmg == "Super Effective"  && Darkdmg2 == "Neutral")) {
+			Darkdmg = "Super Effective";
+		}
+		if ((Darkdmg == "Neutral"  && Darkdmg2 == "Resisted") || (Darkdmg == "Resisted"  && Darkdmg2 == "Neutral")) {
+			Darkdmg = "Resisted";
+		}
+		if ((Darkdmg == "Super Effective"  && Darkdmg2 == "Resisted") || (Darkdmg == "Resisted"  && Darkdmg2 == "Super Effective")) {
+			Darkdmg = "Neutral";
+		}
 	}
 	
+	if ( t2 == "Steel" ) {
+		if (Steeldmg == "Super Effective" && Steeldmg2 == "Super Effective") {
+			Steeldmg = "Doubly Effective";
+		}
+		if (Steeldmg == "Resisted" && Steeldmg2 == "Resisted") {
+			Steeldmg = "Doubly Resisted";
+		}
+		if (Steeldmg == "No Effect" || Steeldmg2 == "No Effect") {
+			Steeldmg = "No Effect";
+		}
+		if ((Steeldmg == "Neutral"  && Steeldmg2 == "Super Effective") || (Steeldmg == "Super Effective"  && Steeldmg2 == "Neutral")) {
+			Steeldmg = "Super Effective";
+		}
+		if ((Steeldmg == "Neutral"  && Steeldmg2 == "Resisted") || (Steeldmg == "Resisted"  && Steeldmg2 == "Neutral")) {
+			Steeldmg = "Resisted";
+		}
+		if ((Steeldmg == "Super Effective"  && Steeldmg2 == "Resisted") || (Steeldmg == "Resisted"  && Steeldmg2 == "Super Effective")) {
+			Steeldmg = "Neutral";
+		}
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	if ( t2 == "Fairy" ) {
+		if (Fairydmg == "Super Effective" && Fairydmg2 == "Super Effective") {
+			Fairydmg = "Doubly Effective";
+		}
+		if (Fairydmg == "Resisted" && Fairydmg2 == "Resisted") {
+			Fairydmg = "Doubly Resisted";
+		}
+		if (Fairydmg == "No Effect" || Fairydmg2 == "No Effect") {
+			Fairydmg = "No Effect";
+		}
+		if ((Fairydmg == "Neutral"  && Fairydmg2 == "Super Effective") || (Fairydmg == "Super Effective"  && Fairydmg2 == "Neutral")) {
+			Fairydmg = "Super Effective";
+		}
+		if ((Fairydmg == "Neutral"  && Fairydmg2 == "Resisted") || (Fairydmg == "Resisted"  && Fairydmg2 == "Neutral")) {
+			Fairydmg = "Resisted";
+		}
+		if ((Fairydmg == "Super Effective"  && Fairydmg2 == "Resisted") || (Fairydmg == "Resisted"  && Fairydmg2 == "Super Effective")) {
+			Fairydmg = "Neutral";
+		}
+	}
 	
 	document.getElementById("Normal" + (i+1)).innerHTML = Normaldmg;
 	document.getElementById("Grass" + (i+1)).innerHTML = Grassdmg;
@@ -559,11 +734,15 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	document.getElementById("Steel" + (i+1)).innerHTML = Steeldmg;
 	document.getElementById("Fairy" + (i+1)).innerHTML = Fairydmg;
 	
+	console.log(Fairydmg);
+	
     text = "";
 }
 }
+
 </script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://pokemonshowdown.com/damagecalc/pokedex.js"></script>
 </body>
 </html>
 </html>
