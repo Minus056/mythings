@@ -352,7 +352,7 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	var Dark2 = { Normal: 5, Grass: 5, Fire: 5, Water: 5, Electric: 5, Ice: 5, Flying: 5, Bug: 5, Poison: 5, Ground: 5, Rock: 5, Fighting: 3, Psychic: 7, Ghost: 7, Dragon: 5, Dark: 3, Steel: 5, Fairy: 3 };
 	var Steel2 = { Normal: 5, Grass: 5, Fire: 3, Water: 3, Electric: 3, Ice: 7, Flying: 5, Bug: 5, Poison: 5, Ground: 5, Rock: 7, Fighting: 5, Psychic: 5, Ghost: 5, Dragon: 5, Dark: 5, Steel: 3, Fairy: 7 }; 
 	var Fairy2 = { Normal: 5, Grass: 5, Fire: 3, Water: 5, Electric: 5, Ice: 5, Flying: 5, Bug: 5, Poison: 3, Ground: 5, Rock: 5, Fighting: 7, Psychic: 5, Ghost: 5, Dragon: 7, Dark: 7, Steel: 3, Fairy: 5 };
-		
+	console.log(Normaldmg)
 		var typearr;
 		
 	if (t2 != "") {
@@ -375,7 +375,7 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 			
 		}
 	}
-	console
+	console.log(Normaldmg);
 	
 	Normaldmg = typearr[0];
 	Grassdmg = typearr[1];
@@ -396,7 +396,7 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	Steeldmg = typearr[16];
 	Fairydmg = typearr[17];
 	
-	
+	console.log(typearr[0]);
 	
 	document.getElementById("Normal" + (i+1)).innerHTML = Normaldmg;
 	document.getElementById("Grass" + (i+1)).innerHTML = Grassdmg;
@@ -437,6 +437,11 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	Darkdmg = "";
 	Steeldmg = "";
 	Fairydmg = "";
+	typearr[0] = "";
+	typearr[0] = "";
+	typearr[0] = "";
+	typearr[0] = "";
+	typearr[0] = "";typearr[0] = "";
 }
 }
 </script>
