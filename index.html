@@ -258,7 +258,7 @@ function getNamesFromImportable() {
     var text = "";
     var i;
     var j;
-    for (i = 0; i < 6; i++) {
+    for (i = 0; i < x.elements.length; i++) {
         var y = x.elements[i].value.indexOf("@");
         for (j = 0; j < y-1; j++) {
             text += x.elements[i].value.charAt(j);
@@ -462,9 +462,10 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	typearr[16] = "";
 	typearr[17] = "";
 }
+	var numpokes = document.getElementById("teaminput").elements.length;
 	var a;
 	var results = 0;
-	for (a = 1; a < 7; a++) {
+	for (a = 1; a < numpokes; a++) {
 		console.log(document.getElementById(("Normal1")));
 		if (document.getElementById(("Normal"+a)).innerHTML == "Super Effective") {
 		results += 1;
