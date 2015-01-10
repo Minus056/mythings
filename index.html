@@ -466,10 +466,10 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	var results = 0;
 	for (a = 1; a < 7; a++) {
 		console.log(document.getElementById(("Normal1")));
-		if (document.getElementById(("Normal"+a)) == "Super Effective") {
+		if (document.getElementById(("Normal"+a)).innerHTML == "Super Effective") {
 		results += 1;
 		}
-		if (document.getElementById(("Normal1")) == "Resisted") {
+		if (document.getElementById(("Normal1")).innerHTML == "Resisted") {
 		results -= 1;
 		}
 	}
