@@ -386,7 +386,88 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 		Rockdmg = "Super Effective";
 	}
 	
+	if ((t1 == "Poison" && t2 == "Grass") ||( t1 == "Grass" && t2 == "Poison")) {
+		Grassdmg = "Resisted";
+		Fightingdmg = "Resisted";
+		Electricdmg = "Resisted";
+		Fairydmg = "Resisted";
+		Waterdmg = "Resisted";
+		Firedmg = "Super Effective";
+		Psychicdmg = "Super Effective;
+		Flyingdmg = "Super Effective";
+		Icedmg = "Super Effective";
+		Rockdmg = "Super Effective";
+	}
 	
+	if ((t1 == "Poison" && t2 == "Bug") ||( t1 == "Bug" && t2 == "Poison")) {
+		Grassdmg = "Resisted";
+		Fightingdmg = "Resisted";
+		Bugdmg = "Resisted";
+		Fairydmg = "Resisted";
+		Poisondmg = "Resisted";
+		Firedmg = "Super Effective";
+		Psychicdmg = "Super Effective;
+		Flyingdmg = "Super Effective";
+		Rockdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Rock" && t2 == "Water") ||( t1 == "Water" && t2 == "Rock")) {
+		Firedmg = "Resisted";
+		Icedmg = "Resisted";
+		Flyingdmg = "Resisted";
+		Normaldmg = "Resisted";
+		Poisondmg = "Resisted";
+		Fightingdmg = "Super Effective";
+		Electricdmg = "Super Effective;
+		Grounddmg = "Super Effective";
+		Grassdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Rock" && t2 == "Ground") ||( t1 == "Ground" && t2 == "Rock")) {
+		Electricdmg = "No Effect";
+		Poisondmg = "Resisted";
+		Flyingdmg = "Resisted";
+		Firedmg = "Resisted";
+		Normaldmg = "Resisted";
+		Rockdmg = "Resisted";
+		Fightingdmg = "Super Effective";
+		Grounddmg = "Super Effective;
+		Icedmg = "Super Effective";
+		Steeldmg = "Super Effective";
+		Waterdmg = "Super Effective";
+		Grassdmg = "Super Effective";
+	}
+	
+		if ((t1 == "Water" && t2 == "Ground") ||( t1 == "Ground" && t2 == "water")) {
+		Electricdmg = "No Effect";
+		Poisondmg = "Resisted";
+		Rockdmg = "Resisted";
+		Firedmg = "Resisted";
+		Steeldmg = "Resisted";
+		Grassdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Flying" && t2 == "Water") ||( t1 == "Water" && t2 == "Flying")) {
+		Grounddmg = "No Effect";
+		Bugdmg = "Resisted";
+		Fightingdmg = "Resisted";
+		Firedmg = "Resisted";
+		Steeldmg = "Resisted";
+		Waterdmg = "Resisted";
+		Rockdmg = "Super Effective";
+		Electricdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Fighting" && t2 == "Fire") ||( t1 == "Fire" && t2 == "Fighting")) {
+		Grounddmg = "No Effect";
+		Bugdmg = "Resisted";
+		Fightingdmg = "Resisted";
+		Firedmg = "Resisted";
+		Steeldmg = "Resisted";
+		Waterdmg = "Resisted";
+		Rockdmg = "Super Effective";
+		Electricdmg = "Super Effective";
+	}
 	
 	
 	
