@@ -369,8 +369,6 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 			if (typearr[k] == 8) {typearr[k] = "Resisted";}
 			if (typearr[k] == 6) {typearr[k] = "Doubly Resisted";}
 		}
-	}
-	
 	typearr[0] =  Normaldmg;
 	typearr[1] =  Grassdmg;
 	typearr[2] =  Firedmg;
@@ -389,6 +387,7 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	typearr[15] =  Darkdmg;
 	typearr[16] =  Steeldmg;
 	typearr[17] =  Fairydmg;
+	}
 	
 	document.getElementById("Normal" + (i+1)).innerHTML = Normaldmg;
 	document.getElementById("Grass" + (i+1)).innerHTML = Grassdmg;
