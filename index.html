@@ -459,15 +459,75 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	}
 	
 	if ((t1 == "Fighting" && t2 == "Fire") ||( t1 == "Fire" && t2 == "Fighting")) {
-		Grounddmg = "No Effect";
 		Bugdmg = "Resisted";
-		Fightingdmg = "Resisted";
+		Darkdmg = "Resisted";
 		Firedmg = "Resisted";
+		Grassdmg = "Resisted";
+		Icedmg = "Resisted";
 		Steeldmg = "Resisted";
-		Waterdmg = "Resisted";
-		Rockdmg = "Super Effective";
-		Electricdmg = "Super Effective";
+		Flyingdmg = "Super Effective";
+		Grounddmg = "Super Effective";
+		Waterdmg = "Super Effective";
+		Psychicdmg = "Super Effective";
 	}
+	
+	if ((t1 == "Fighting" && t2 == "Fire") ||( t1 == "Fire" && t2 == "Fighting")) {
+		Bugdmg = "Resisted";
+		Darkdmg = "Resisted";
+		Firedmg = "Resisted";
+		Grassdmg = "Resisted";
+		Icedmg = "Resisted";
+		Steeldmg = "Resisted";
+		Flyingdmg = "Super Effective";
+		Grounddmg = "Super Effective";
+		Waterdmg = "Super Effective";
+		Psychicdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Flying" && t2 == "Psychic") ||( t1 == "Psychic" && t2 == "Flying")) {
+		Grounddmg = "No Effect";
+		Fightingdmg = "Resisted";
+		Psychicdmg = "Resisted";
+		Grassdmg = "Resisted";
+		Icedmg = "Super Effective";
+		Rockdmg = "Super Effective";
+		Ghostdmg = "Super Effective";
+		Electricdmg = "Super Effective";
+		Darkdmg = "Super Effective";
+	}
+	
+	if ((t1 == "Flying" && t2 == "Psychic") ||( t1 == "Psychic" && t2 == "Flying")) {
+		Grounddmg = "No Effect";
+		Fightingdmg = "Resisted";
+		Psychicdmg = "Resisted";
+		Grassdmg = "Resisted";
+		Icedmg = "Super Effective";
+		Rockdmg = "Super Effective";
+		Ghostdmg = "Super Effective";
+		Electricdmg = "Super Effective";
+		Darkdmg = "Super Effective";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -502,7 +562,6 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
     text = "";
 }
 }
-
 </script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </body>
