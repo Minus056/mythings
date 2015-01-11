@@ -471,46 +471,230 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 }
 	var numpokes = 0;
 	var a;
-	
 	for (a = 0; a < 6 ; a++) {
 		if (document.getElementById("pokemon"+a).innerText != "Enter PKMN") {
 			numpokes += 1;
 		}
 	}
-	console.log(numpokes)
+	
 	var b
 	var results = 0;
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Normal"+b)).innerText == "Super Effective") {
-		results += 1;
-		}
-		if (document.getElementById(("Normal"+b)).innerText == "Resisted" || document.getElementById(("Normal"+b)).innerText == "No Effect") {
-		results -= 1;
-		}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Resisted" || document.getElementById(("Normal"+b)).innerText == "No Effect") {results -= 1;}
 	}
-	console.log(results);
+	if (results == 0) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('good');}
+	if (results < -1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('really-weak');}
+
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Grass"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Grass"+b)).innerText == "Resisted" || document.getElementById(("Grass"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('good');}
+	if (results < -1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('really-weak');}
 	
-	if (results == 0) {
-		document.getElementById("Normalr").classList.remove('tg-hjma');
-		document.getElementById("Normalr").classList.add('ok');
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Fire"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Fire"+b)).innerText == "Resisted" || document.getElementById(("Fire"+b)).innerText == "No Effect") {results -= 1;}
 	}
-	if (results == -1) {
-		document.getElementById("Normalr").classList.remove('tg-hjma');
-		document.getElementById("Normalr").classList.add('good');
+	if (results == 0) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('ok');}
+	if (results == -1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('good');}
+	if (results < -1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('weak');}
+	if (results > 1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Water"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Water"+b)).innerText == "Resisted" || document.getElementById(("Water"+b)).innerText == "No Effect") {results -= 1;}
 	}
-	if (results < -1) {
-		document.getElementById("Normalr").classList.remove('tg-hjma');
-		document.getElementById("Normalr").classList.add('really-good');
+	if (results == 0) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('good');}
+	if (results < -1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Electric"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Electric"+b)).innerText == "Resisted" || document.getElementById(("Electric"+b)).innerText == "No Effect") {results -= 1;}
 	}
-	if (results == 1) {
-		document.getElementById("Normalr").classList.remove('tg-hjma');
-		document.getElementById("Normalr").classList.add('weak');
+	if (results == 0) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('good');}
+	if (results < -1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Ice"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Ice"+b)).innerText == "Resisted" || document.getElementById(("Ice"+b)).innerText == "No Effect") {results -= 1;}
 	}
-	if (results > 1) {
-		document.getElementById("Normalr").classList.remove('tg-hjma');
-		document.getElementById("Normalr").classList.add('really-weak');
+	if (results == 0) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('ok');}
+	if (results == -1) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('good');}
+	if (results < -1) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('weak');}
+	if (results > 1) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Flying"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Flying"+b)).innerText == "Resisted" || document.getElementById(("Flying"+b)).innerText == "No Effect") {results -= 1;}
 	}
+	if (results == 0) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('good');}
+	if (results < -1) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Bug"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Bug"+b)).innerText == "Resisted" || document.getElementById(("Bug"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('good');}
+	if (results < -1) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Poison"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Poison"+b)).innerText == "Resisted" || document.getElementById(("Poison"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('good');}
+	if (results < -1) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Ground"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Ground"+b)).innerText == "Resisted" || document.getElementById(("Ground"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('good');}
+	if (results < -1) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Rock"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Rock"+b)).innerText == "Resisted" || document.getElementById(("Rock"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('good');}
+	if (results < -1) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Fighting"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Fighting"+b)).innerText == "Resisted" || document.getElementById(("Fighting"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('good');}
+	if (results < -1) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Psychic"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Psychic"+b)).innerText == "Resisted" || document.getElementById(("Psychic"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('good');}
+	if (results < -1) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Ghost"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Ghost"+b)).innerText == "Resisted" || document.getElementById(("Ghost"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('good');}
+	if (results < -1) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Dragon"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Dragon"+b)).innerText == "Resisted" || document.getElementById(("Dragon"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('good');}
+	if (results < -1) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Dark"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Dark"+b)).innerText == "Resisted" || document.getElementById(("Dark"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('good');}
+	if (results < -1) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Steel"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Steel"+b)).innerText == "Resisted" || document.getElementById(("Steel"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('good');}
+	if (results < -1) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('really-weak');}
+	
+	var b
+	var results = 0;
+	for (b = 1; b < numpokes+1; b++) {
+		if (document.getElementById(("Fairy"+b)).innerText == "Super Effective") {results += 1;}
+		if (document.getElementById(("Fairy"+b)).innerText == "Resisted" || document.getElementById(("Fairy"+b)).innerText == "No Effect") {results -= 1;}
+	}
+	if (results == 0) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('ok');}
+	if (results == -1) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('good');}
+	if (results < -1) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('really-good');}
+	if (results == 1) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('weak');}
+	if (results > 1) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('really-weak');}
+	
 }
+	
 </script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="https://pokemonshowdown.com/damagecalc/pokedex.js"></script>
