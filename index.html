@@ -495,8 +495,9 @@ function getNamesFromImportable() {
 	if (results < -1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('really-good');}
 	if (results == 1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('weak');}
 	if (results > 1) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('really-weak');}
-	results = 0;
 	console.log(results);
+	results = 0;
+
 
 	for (b = 1; b < numpokes+1; b++) {
 		if (document.getElementById(("Grass"+b)).innerText == "Effective") {results += 1;}
@@ -507,8 +508,9 @@ function getNamesFromImportable() {
 	if (results < -1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('really-good');}
 	if (results == 1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('weak');}
 	if (results > 1) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('really-weak');}
+		console.log(results);
 	results = 0;
-	console.log(results);
+	
 	
 	for (b = 1; b < numpokes+1; b++) {
 		if (document.getElementById(("Fire"+b)).innerText == "Effective") {results += 1;}
@@ -519,8 +521,9 @@ function getNamesFromImportable() {
 	if (results < -1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('really-good');}
 	if (results == 1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('weak');}
 	if (results > 1) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('really-weak');}
+		console.log(results);
 	results = 0;
-	console.log(results);
+	
 
 	for (b = 1; b < numpokes+1; b++) {
 		if (document.getElementById(("Water"+b)).innerText == "Effective") {results += 1;}
@@ -531,8 +534,9 @@ function getNamesFromImportable() {
 	if (results < -1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('really-good');}
 	if (results == 1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('weak');}
 	if (results > 1) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('really-weak');}
-	results = 0;
 	console.log(results);
+	results = 0;
+	
 
 	for (b = 1; b < numpokes+1; b++) {
 		if (document.getElementById(("Electric"+b)).innerText == "Effective") {results += 1;}
@@ -543,8 +547,9 @@ function getNamesFromImportable() {
 	if (results < -1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('really-good');}
 	if (results == 1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('weak');}
 	if (results > 1) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('really-weak');}
+	console.log(results);	
 	results = 0;
-	console.log(results);
+	
 
 	for (b = 1; b < numpokes+1; b++) {
 		if (document.getElementById(("Ice"+b)).innerText == "Effective") {results += 1;}
