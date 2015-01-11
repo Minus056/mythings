@@ -466,8 +466,10 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 }
 	var numpokes = 0;
 	var a;
+	
 	for (a = 0; a < 6 ; a++) {
-		if (document.getElementById(("pokemon"+a)).innerHTML != "Enter PKMN") {
+		console.log(document.getElementById("pokemon"+a).innerHTML);
+		if (document.getElementById("pokemon"+a).innerHTML != "Enter PKMN") {
 			numpokes += 0;
 		}
 	}
@@ -475,10 +477,10 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	var b
 	var results = 0;
 	for (b = 1; b < numpokes; b++) {
-		if (document.getElementById(("Normal"+a)).innerHTML == "Super Effective") {
+		if (document.getElementById(("Normal"+b)).innerHTML == "Super Effective") {
 		results += 1;
 		}
-		if (document.getElementById(("Normal1")).innerHTML == "Resisted") {
+		if (document.getElementById(("Normal"+b)).innerHTML == "Resisted") {
 		results -= 1;
 		}
 	}
