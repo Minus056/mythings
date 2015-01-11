@@ -468,8 +468,8 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	var a;
 	
 	for (a = 0; a < 6 ; a++) {
-		console.log(document.getElementById("pokemon"+a).innerHTML);
-		if (document.getElementById("pokemon"+a).innerHTML == "Enter PKMN") {
+		var blah = "" + document.getElementById("pokemon"+a).innerHTML;
+		if (blah != "Enter PKMN") {
 			numpokes += 0;
 		}
 	}
