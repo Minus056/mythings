@@ -47,7 +47,7 @@
 <body>
 <form id="teaminput" action="form_action.asp">
 	<label for="message">Enter an importable of your team here (One Pokemon per box).</label>
-	<textarea name="teaminput1"></textarea>
+    <textarea name="teaminput1"></textarea>
     <textarea name="teaminput2"></textarea>
     <textarea name="teaminput3"></textarea>
     <textarea name="teaminput4"></textarea>
@@ -466,8 +466,8 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 }
 	var numpokes = 0;
 	var a;
-	for (a = 0; a < 7 ; a++) {
-		if (document.getElementById(("pokemon"+a)).innerHTML.value != "Enter PKMN") {
+	for (a = 0; a < 6 ; a++) {
+		if (document.getElementById(("pokemon"+a)).innerHTML != "Enter PKMN") {
 			numpokes += 0;
 		}
 	}
