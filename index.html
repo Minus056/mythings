@@ -462,9 +462,14 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 	typearr[16] = "";
 	typearr[17] = "";
 }
-	var numpokes = document.getElementById("teaminput").elements.length;
-	console.log(numpokes);
+	var numpokes = 0;
 	var a;
+	for (a = 0; a < 7 =; a++) {
+		if (document.getElementById(("pokemon"+a)).innerHTML != "") {
+			results += 0;
+		}
+	}
+	
 	var results = 0;
 	for (a = 1; a < numpokes; a++) {
 		if (document.getElementById(("Normal"+a)).innerHTML == "Super Effective") {
