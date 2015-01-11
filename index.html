@@ -487,7 +487,7 @@ function getNamesFromImportable() {
 	var b;
 	var results = 0;
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Normal"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Normal"+b)).innerText == "Resisted" || document.getElementById(("Normal"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Normalr").classList.remove('tg-hjma');document.getElementById("Normalr").classList.add('ok');}
@@ -500,7 +500,7 @@ function getNamesFromImportable() {
 
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Grass"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Grass"+b)).innerText == "Resisted" || document.getElementById(("Grass"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Grassr").classList.remove('tg-hjma');document.getElementById("Grassr").classList.add('ok');}
@@ -513,7 +513,7 @@ function getNamesFromImportable() {
 	
 	
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Fire"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Fire"+b)).innerText == "Resisted" || document.getElementById(("Fire"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Firer").classList.remove('tg-hjma');document.getElementById("Firer").classList.add('ok');}
@@ -526,7 +526,7 @@ function getNamesFromImportable() {
 	
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Water"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Water"+b)).innerText == "Resisted" || document.getElementById(("Water"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Waterr").classList.remove('tg-hjma');document.getElementById("Waterr").classList.add('ok');}
@@ -539,7 +539,7 @@ function getNamesFromImportable() {
 	
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Electric"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Electric"+b)).innerText == "Resisted" || document.getElementById(("Electric"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Electricr").classList.remove('tg-hjma');document.getElementById("Electricr").classList.add('ok');}
@@ -552,7 +552,7 @@ function getNamesFromImportable() {
 	
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Ice"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Ice"+b)).innerText == "Resisted" || document.getElementById(("Ice"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Icer").classList.remove('tg-hjma');document.getElementById("Icer").classList.add('ok');}
@@ -563,7 +563,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Flying"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Flying"+b)).innerText == "Resisted" || document.getElementById(("Flying"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Flyingr").classList.remove('tg-hjma');document.getElementById("Flyingr").classList.add('ok');}
@@ -574,7 +574,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Bug"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Bug"+b)).innerText == "Resisted" || document.getElementById(("Bug"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Bugr").classList.remove('tg-hjma');document.getElementById("Bugr").classList.add('ok');}
@@ -585,7 +585,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Poison"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Poison"+b)).innerText == "Resisted" || document.getElementById(("Poison"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Poisonr").classList.remove('tg-hjma');document.getElementById("Poisonr").classList.add('ok');}
@@ -596,7 +596,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Ground"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Ground"+b)).innerText == "Resisted" || document.getElementById(("Ground"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Groundr").classList.remove('tg-hjma');document.getElementById("Groundr").classList.add('ok');}
@@ -607,7 +607,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Rock"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Rock"+b)).innerText == "Resisted" || document.getElementById(("Rock"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Rockr").classList.remove('tg-hjma');document.getElementById("Rockr").classList.add('ok');}
@@ -618,7 +618,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Fighting"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Fighting"+b)).innerText == "Resisted" || document.getElementById(("Fighting"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Fightingr").classList.remove('tg-hjma');document.getElementById("Fightingr").classList.add('ok');}
@@ -629,7 +629,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Psychic"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Psychic"+b)).innerText == "Resisted" || document.getElementById(("Psychic"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Psychicr").classList.remove('tg-hjma');document.getElementById("Psychicr").classList.add('ok');}
@@ -640,7 +640,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Ghost"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Ghost"+b)).innerText == "Resisted" || document.getElementById(("Ghost"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Ghostr").classList.remove('tg-hjma');document.getElementById("Ghostr").classList.add('ok');}
@@ -651,7 +651,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Dragon"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Dragon"+b)).innerText == "Resisted" || document.getElementById(("Dragon"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Dragonr").classList.remove('tg-hjma');document.getElementById("Dragonr").classList.add('ok');}
@@ -662,7 +662,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Dark"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Dark"+b)).innerText == "Resisted" || document.getElementById(("Dark"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Darkr").classList.remove('tg-hjma');document.getElementById("Darkr").classList.add('ok');}
@@ -673,7 +673,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Steel"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Steel"+b)).innerText == "Resisted" || document.getElementById(("Steel"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Steelr").classList.remove('tg-hjma');document.getElementById("Steelr").classList.add('ok');}
@@ -684,7 +684,7 @@ function getNamesFromImportable() {
 	results = 0;
 
 	for (b = 1; b < numpokes+1; b++) {
-		if (document.getElementById(("Fairy"+b)).innerText == "Effective") {results += 1;}
+		if (document.getElementById(("Normal"+b)).innerText == "Super Effective" || document.getElementById(("Normal"+b)).innerText == "Doubly Effective") {results += 1;}
 		if (document.getElementById(("Fairy"+b)).innerText == "Resisted" || document.getElementById(("Fairy"+b)).innerText == "No Effect") {results -= 1;}
 	}
 	if (results == 0) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('ok');}
