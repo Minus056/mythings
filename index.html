@@ -273,15 +273,16 @@ function getNamesFromImportable() {
 				v2 = x[ind].indexOf(')');
 				x[ind] = x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2);
 			}
-			if (x[ind].indexOf("(") > -1)				//gender specific pokemon mess this up if you don't remove the (M)/(F)
+			if (x[ind].indexOf("(") > -1) {				//gender specific pokemon mess this up if you don't remove the (M)/(F)
 				x[ind] = x[ind].replace(/\((M|F)\) /g, '');
-				
-			if (x[ind].indexOf(" @ ") > -1)				//if there's an item on the pokemon (relevant for acrobtics or incomplete imports)
+			}	
+			if (x[ind].indexOf(" @ ") > -1)	{			//if there's an item on the pokemon (relevant for acrobtics or incomplete imports)
 				team.push(x[ind].split(" @")[0]);
-			else
+			} else
 				team.push(x[ind]);
+			}
 		}
-	}
+	
 	
     for (i = 0; i < team.length; i++) {
 		text = team[i];
