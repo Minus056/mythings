@@ -484,7 +484,7 @@ if (t1 == 'Normal') { Normaldmg = Normal.Normal; Grassdmg = Grass.Normal; Firedm
 		if (document.getElementById(("Normal"+b)).innerText == "Super Effective") {
 		results += 1;
 		}
-		if (document.getElementById(("Normal"+b)).innerText == "Resisted") {
+		if (document.getElementById(("Normal"+b)).innerText == "Resisted" || document.getElementById(("Normal"+b)).innerText == "No Effect") {
 		results -= 1;
 		}
 	}
