@@ -369,12 +369,13 @@ function getNamesFromImportable() {
     var text = "";
     var i;
     var j;
+    
 	
 	var x = document.teaminput.team.value.split('\n'); 	//make an array similar to the importable
 	var team = [];
 	for (var ind = 0; ind < x.length - 1; ind++) {
 		if (x[ind + 1].indexOf("Ability") > -1) {		//pick out the pokemon from the array and same in team
-			if (x[ind].indexOf(')') > -1) {				//separate nicknames
+			if (x[ind].indexOf(')') > -1 && (x[ind].charAt(x[ind].indexOf(')')-1) != 'M' || x[ind].charAt(x[ind].indexOf(')')-1))) {				//separate nicknames
 				v1 = x[ind].indexOf('(') + 1;
 				v2 = x[ind].indexOf(')');
 				x[ind] = x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2);
@@ -801,6 +802,8 @@ function getNamesFromImportable() {
 	if (results > 1) {document.getElementById("Fairyr").classList.remove('tg-hjma');document.getElementById("Fairyr").classList.add('really-weak');}
 	results = 0;
 }
+
+
 	
 </script>
 	  </div>
