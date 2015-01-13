@@ -375,9 +375,16 @@ function getNamesFromImportable() {
 	var team = [];
 	for (var ind = 0; ind < x.length - 1; ind++) {
 		if (x[ind + 1].indexOf("Ability") > -1) {		//pick out the pokemon from the array and same in team
-			if (x[ind].indexOf(')') > -1 && (x[ind].charAt(x[ind].indexOf(')')-1) != 'M' || x[ind].charAt(x[ind].indexOf(')')-1))) {				//separate nicknames
+			if (x[ind].indexOf(')') > -1) {				//separate nicknames
 				v1 = x[ind].indexOf('(') + 1;
 				v2 = x[ind].indexOf(')');
+				if (x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2) == 'M' || x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2) == 'F') {
+					if (x[ind].indexOf(" @ ") > -1)	{
+						team.push(x[ind].split(" @")[0]);
+					} else {
+						team.push(x[ind]);	
+					}
+				}
 				x[ind] = x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2);
 			}
 			if (x[ind].indexOf("(") > -1) {				//gender specific pokemon mess this up if you don't remove the (M)/(F)
