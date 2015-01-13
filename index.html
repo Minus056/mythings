@@ -19,7 +19,6 @@
 <p><strong>Known bugs:</strong></p>
 <li>Abilities like "Levitate" and "Flash Fire" aren't taken into account.</li>
 <li>No ORAS Megas/Primals either. I'm going to do this last since it's the least important.</li>
-<li>Delete the Gender part of the importable or else it won't work (for now).</li>
 <br>
 <p>Post any bugs you find in the thread in Technical Projects</p>
 <br>
@@ -375,20 +374,15 @@ function getNamesFromImportable() {
 	var team = [];
 	for (var ind = 0; ind < x.length - 1; ind++) {
 		if (x[ind + 1].indexOf("Ability") > -1) {		//pick out the pokemon from the array and same in team
-			if (x[ind].indexOf(')') > -1) {				//separate nicknames
-				v1 = x[ind].indexOf('(') + 1;
-				v2 = x[ind].indexOf(')');
-				x[ind] = x[ind].substr(v1, (v2 - v1) ) + x[ind].substr(v2 + 1, x[ind].length - v2);
-			}
-			if (x[ind].indexOf("(M)") > -1 || x[ind].indexOf("(F)") > -1) {				//gender specific pokemon mess this up if you don't remove the (M)/(F)
-				x[ind] = x[ind].replace(/\((M|F)\) /g, '');
-			}	
-			if (x[ind].indexOf(" @ ") > -1)	{			//if there's an item on the pokemon (relevant for acrobtics or incomplete imports)
-				team.push(x[ind].split(" @")[0]);
-			} else
-				team.push(x[ind]);
-			}
+			// Regular expression matching the first line (partial match).
+			// It matches expression outside of parenthesis as match 1, and
+			// expression inside parenthesis as match 2 (as long it's not F or M).
+			// If match 2 is defined, it's used as Pokemon specie, otherwise match 1
+			// is used for that purpose.
+			var matches = /^([^(@]*)(?: |$)(?:\((?![FM]\))([^)]*)\))?/.exec(x[ind]);
+			team.push(matches[2] || matches[1]);
 		}
+	}
 	
 	
     for (i = 0; i < team.length; i++) {
